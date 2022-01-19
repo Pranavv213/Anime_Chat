@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="home.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="home.css">
+    <title>Output</title>
+</head>
+ <!-- https://th.bing.com/th/id/OIP.KnNz1-XctljRn4POBWR4gAHaEK?pid=ImgDet&rs=1 -->
+<body style=" 
+
+background-image:url(https://wallpapercave.com/wp/wp1809898.jpg);
+background-position:fixed;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-size: cover;
+">
+<!-- <script>
+    document.body.style.backgroundImage=`url("https://th.bing.com/th/id/R.f2b390e100a00c183488acdcd1d6c838?rik=TSrEZXkT%2blxPag&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1809915.png&ehk=3wqj9gIKTpwTrzHkQB3E0aPTituuYS19RtyKh8FhSSI%3d&risl=&pid=ImgRaw&r=0")`
+    document.body.style.backgroundSize="100%"
+</script>> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  
+    <!-- <%=arr[1]%><br><%=arr[2]%> -->
+    <br>
+    <%for(let a of arr[0]){%>
+        <div style="border-radius:2em; width:19em" class="card" style="width: 18rem;">
+            
+            <div class="card-body">
+              <h5 class="card-title"><%=a.sender%>
+            </h5>
+              <p class="card-text"><%=a.comment%></p>
+              
+            </div>
+          </div>
+          <br>
+        <%}%>
+    <br>
+    <form style=" display:flex;
+    flex-wrap: wrap;" method="post" action="/send/<%=arr[1]%>/<%=arr[2]%>">
+        <input style="border-radius: 19px;
+        height:55px;" type="text" name="messege">
+        <button style="background-color: rgb(233, 219, 27);
+        border-radius: 19px;
+        padding:20px;
+        width:7em;
+        height:3em;
+        border:7px solid;
+        transition: 0.5s; display:flex;
+        justify-content: center;
+        align-items: center;">send</button>
+    </form>
+</body>
+</html>

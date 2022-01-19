@@ -1,0 +1,32 @@
+body{
+    /* background-color:rgb(30,30,30); */
+    background-image:url("https://wallpapercave.com/wp/wp1809898.jpg");
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+}
+h1{
+    background-color: black;
+    color:white;
+
+}
+button{
+    background-color: rgb(233, 219, 27);
+    border-radius: 19px;
+    padding:20px;
+    width:24em;
+    height:10em;
+    border:7px solid;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(2, 207, 190);
+    border-radius: 19px;
+    padding:20px;
+    width:24em;
+    height:10em;
+    border:7px solid;
+    transform:translateY(-10px)
+}

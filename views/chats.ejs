@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chats.css">
+    <title>Chats</title>
+</head>
+<body style="
+background-image:url(https://th.bing.com/th/id/OIP.KnNz1-XctljRn4POBWR4gAHaEK?pid=ImgDet&rs=1);
+ display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+">
+<!-- <script>
+    document.body.style.backgroundImage=`url("https://th.bing.com/th/id/OIP.KnNz1-XctljRn4POBWR4gAHaEK?pid=ImgDet&rs=1")`
+</script> -->
+    <form style=" display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top:20%" action='/searched/<%=username%> '>
+        <input placeholder="Search Username" style="border-radius: 19px;
+        height:55px;" name="username" type="text">
+        <br>
+        <button style=" background-color: rgb(233, 219, 27);
+        border-radius: 19px;
+        padding:20px;
+        width:24em;
+        height:7em;
+        border:7px solid;
+        transition: 0.5s;">submit</button>
+    </form>
+</body>
+</html>

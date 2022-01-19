@@ -1,0 +1,42 @@
+body{
+    /* background-color:rgb(30,30,30); */
+    background-image:url("https://th.bing.com/th/id/R.f2b390e100a00c183488acdcd1d6c838?rik=TSrEZXkT%2blxPag&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1809915.png&ehk=3wqj9gIKTpwTrzHkQB3E0aPTituuYS19RtyKh8FhSSI%3d&risl=&pid=ImgRaw&r=0");
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+h1{
+    background-color: black;
+    color:white;
+
+}
+form{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+form input{
+    border-radius: 19px;
+    height:55px;
+}
+button{
+    background-color: rgb(233, 219, 27);
+    border-radius: 19px;
+    padding:20px;
+    width:24em;
+    height:7em;
+    border:7px solid;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(2, 207, 190);
+    border-radius: 19px;
+    padding:20px;
+    width:24em;
+    height:10em;
+    border:7px solid;
+    transform:translateY(-10px)
+}
